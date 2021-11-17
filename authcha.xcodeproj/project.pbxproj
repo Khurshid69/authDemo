@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AF32159D5ACE24B0DC46A02 /* Pods_authcha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C38448B234C8F80AB0794A0 /* Pods_authcha.framework */; };
 		CE06669F2745947600D9E870 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE06669E2745947600D9E870 /* AppDelegate.swift */; };
 		CE0666A12745947600D9E870 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0666A02745947600D9E870 /* SceneDelegate.swift */; };
 		CE0666A32745947600D9E870 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0666A22745947600D9E870 /* ViewController.swift */; };
@@ -14,9 +15,13 @@
 		CE0666A92745947600D9E870 /* authcha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE0666A72745947600D9E870 /* authcha.xcdatamodeld */; };
 		CE0666AB2745947800D9E870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0666AA2745947800D9E870 /* Assets.xcassets */; };
 		CE0666AE2745947800D9E870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0666AC2745947800D9E870 /* LaunchScreen.storyboard */; };
+		CE0666B62745955200D9E870 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE0666B52745955200D9E870 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0647FDEEEB0A43EBD42A8115 /* Pods-authcha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-authcha.release.xcconfig"; path = "Target Support Files/Pods-authcha/Pods-authcha.release.xcconfig"; sourceTree = "<group>"; };
+		1C38448B234C8F80AB0794A0 /* Pods_authcha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_authcha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D425AC7DADDB5C5EAEF908 /* Pods-authcha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-authcha.debug.xcconfig"; path = "Target Support Files/Pods-authcha/Pods-authcha.debug.xcconfig"; sourceTree = "<group>"; };
 		CE06669B2745947500D9E870 /* authcha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = authcha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE06669E2745947600D9E870 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0666A02745947600D9E870 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		CE0666AA2745947800D9E870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE0666AD2745947800D9E870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE0666AF2745947800D9E870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0666B52745955200D9E870 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AF32159D5ACE24B0DC46A02 /* Pods_authcha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62E99D0E923E173335DE9FA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39D425AC7DADDB5C5EAEF908 /* Pods-authcha.debug.xcconfig */,
+				0647FDEEEB0A43EBD42A8115 /* Pods-authcha.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF6C6837A8E9F2EFC5A2D217 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C38448B234C8F80AB0794A0 /* Pods_authcha.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE0666922745947500D9E870 = {
 			isa = PBXGroup;
 			children = (
 				CE06669D2745947500D9E870 /* authcha */,
 				CE06669C2745947500D9E870 /* Products */,
+				62E99D0E923E173335DE9FA4 /* Pods */,
+				BF6C6837A8E9F2EFC5A2D217 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +93,7 @@
 				CE0666AC2745947800D9E870 /* LaunchScreen.storyboard */,
 				CE0666AF2745947800D9E870 /* Info.plist */,
 				CE0666A72745947600D9E870 /* authcha.xcdatamodeld */,
+				CE0666B52745955200D9E870 /* GoogleService-Info.plist */,
 			);
 			path = authcha;
 			sourceTree = "<group>";
@@ -77,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0666B22745947800D9E870 /* Build configuration list for PBXNativeTarget "authcha" */;
 			buildPhases = (
+				11644A31C9D8DC391B062FA9 /* [CP] Check Pods Manifest.lock */,
 				CE0666972745947500D9E870 /* Sources */,
 				CE0666982745947500D9E870 /* Frameworks */,
 				CE0666992745947500D9E870 /* Resources */,
+				4A84966420ABA5D3CF56B2E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,12 +159,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0666AE2745947800D9E870 /* LaunchScreen.storyboard in Resources */,
+				CE0666B62745955200D9E870 /* GoogleService-Info.plist in Resources */,
 				CE0666AB2745947800D9E870 /* Assets.xcassets in Resources */,
 				CE0666A62745947600D9E870 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11644A31C9D8DC391B062FA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-authcha-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A84966420ABA5D3CF56B2E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-authcha/Pods-authcha-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-authcha/Pods-authcha-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-authcha/Pods-authcha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE0666972745947500D9E870 /* Sources */ = {
@@ -288,6 +361,7 @@
 		};
 		CE0666B32745947800D9E870 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39D425AC7DADDB5C5EAEF908 /* Pods-authcha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +389,7 @@
 		};
 		CE0666B42745947800D9E870 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0647FDEEEB0A43EBD42A8115 /* Pods-authcha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
